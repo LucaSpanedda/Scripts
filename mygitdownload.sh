@@ -1,5 +1,4 @@
 #!/bin/sh
-
 #My Repositories : scripts for download:
 
 git clone https://github.com/LucaSpanedda/Guida_Primi_Codici_in_FAUST.git ;
@@ -18,4 +17,4 @@ git clone https://github.com/LucaSpanedda/Teensy-Euroshield_Patches.git ;
 git clone https://github.com/LucaSpanedda/Sintesi_per_modelli_fisici_in_FAUST.git ;
 git clone https://github.com/LucaSpanedda/Riverberazione_Digitale_in_FAUST.git ;
 git clone https://github.com/LucaSpanedda/Digital_Oscillators_in_Pure_Data.git ;
-
+git clone https://github.com/LucaSpanedda/Scripts.git;
