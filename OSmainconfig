@@ -5,8 +5,6 @@ Luca Spanedda's OS main configuration script
 start the script with the following command:
 $ bash spanedda_os_mainconfig.sh | tee report.txt
 
-+
-<<+
 # redirect stdout/stderr to a file
 # exec > report.txt 2>&1 
 +
@@ -36,7 +34,7 @@ echo "						"
 
 # start here
 
-#  sudo update and upgrade
+# sudo update and upgrade
 sudo apt-get update && sudo apt-get upgrade -y
 
 # git
@@ -47,17 +45,23 @@ sudo apt-get install curl -y
 
 # desktop app icons
 sudo apt install gnome-shell-extension-manager -y
+# desktop windows resize
+sudo apt-get install compizconfig-settings-manager -y
+
+# snap store
+sudo snap install snap-store 
 
 # chrome - and install wget
 sudo apt install wget
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb
 
-# snap store
-sudo snap install snap-store 
-
 # zoom
 sudo snap install zoom-client 
+
+# pulseaudio and jack
+sudo apt-get install pulseaudio-module-jack
+sudo apt-get install pulseaudio-utils lame mpg123 -y
  
 # python
 sudo apt-get install python3 -y
@@ -65,6 +69,7 @@ sudo apt install python3-pip -y
 pip install numpy
 pip install scipy
 pip install -U matplotlib
+sudo apt-get install python3-matplotlib -y
 
 # pure data
 sudo add-apt-repository ppa:pure-data/pure-data -y
@@ -86,11 +91,24 @@ sudo snap install zotero-snap
 # lilypond
 sudo apt-get install lilypond -y
 
+# frescobaldi
+
 # inkscape
 sudo add-apt-repository universe
 sudo add-apt-repository ppa:inkscape.dev/stable
 sudo apt-get update
 sudo apt install inkscape
+
+# audio from youtube app	
+sudo apt-get install youtube-dl -y
+# and spotify
+pip install spotdl
+sudo apt install ffmpeg
+# bandcamp
+pip3 install bandcamp-downloader
+# soundcloud
+pip3 install scdl --upgrade
+
 
 # download Github User repo
 mkdir Gitrepo
@@ -101,6 +119,7 @@ sudo curl -s https://api.github.com/users/LucaSpanedda/repos | grep \"clone_url\
 cd ..
 cd ..
 echo repositories downloaded
+
 
 # end here
 
