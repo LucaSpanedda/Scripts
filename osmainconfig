@@ -166,7 +166,6 @@ sudo bash install-reaper.sh
 sudo apt-get install pulseaudio-module-jack
 sudo apt-get install jackd -y
 
-# end here
 
 echo "						"   
 echo "						"   
