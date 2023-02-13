@@ -66,6 +66,7 @@ pip install numpy
 pip install scipy
 pip install -U matplotlib
 sudo apt-get install python3-matplotlib -y
+sudo pip install bokeh
 
 # pure data
 sudo add-apt-repository ppa:pure-data/pure-data -y
