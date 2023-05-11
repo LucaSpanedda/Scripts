@@ -57,15 +57,23 @@ sudo apt install ./google-chrome-stable_current_amd64.deb
 # zoom
 sudo snap install zoom-client 
 
-# python
+# Python 3 and libraries
 sudo apt-get install python3 -y
 sudo apt install python3-pip -y
 pip install numpy
 pip install scipy
 pip install -U matplotlib
 sudo apt-get install python3-matplotlib -y
-sudo pip install tornado
-sudo pip install bokeh
+pip install tornado
+pip install bokeh
+
+# GAMuT command line py Concatenative Granulator
+# dependencies
+sudo apt-get install -y libportaudio2 libasound-dev libsndfile1 ffmpeg
+# GAMuT
+pip install gamut
+gamut --version
+gamut --test
 
 # pure data
 sudo add-apt-repository ppa:pure-data/pure-data -y
@@ -77,7 +85,6 @@ sudo apt-get install faust
 
 # LaTex
 sudo apt-get install texlive-full -y
-
 # texmaker
 sudo apt-get install texmaker -y
 
