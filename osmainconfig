@@ -9,29 +9,6 @@ $ bash osmainconfig | tee report.txt
 # exec > report.txt 2>&1 
 +
 
-echo "						"   
-echo "						"   
-echo "       .   *    ..            '		"
-echo "              *          .		"
-echo "                   *       '		"
-echo "              *                *		"
-echo "      *      *        *            	"
-echo "              				"
-echo "		.    *    .      *  .  .	"
-echo "   *   '*		.    *    .      *  	"
-echo "           *				"
-echo "               *'				"
-echo "    .    *    .      *  .  .            	"
-echo "              '				"
-echo "                   *'  .   *    ..	"
-echo "        .   *    .	      		"
-echo "						"     
-echo "						"                   
-echo "	personal script for all the software" 
-echo "		installations and configurations" 
-echo "						"   
-echo "						"   
-
 # sudo update and upgrade
 sudo apt-get update && sudo apt-get upgrade -y
 
@@ -152,8 +129,6 @@ cd ..
 cd ..
 echo repositories downloaded
 
-
-
 # Reaper
 sudo apt-get install build-essential libgtk-3-dev git -y
 wget https://www.reaper.fm/files/6.x/reaper671_linux_x86_64.tar.xz
@@ -172,24 +147,4 @@ sudo bash install-reaper.sh
 sudo apt-get install pulseaudio-module-jack
 sudo apt-get install jackd -y
 
-echo "						"   
-echo "						"   
-echo "       .   *    ..            '		"
-echo "              *          .		"
-echo "                   *       '		"
-echo "              *                *		"
-echo "      *      *        *            	"
-echo "              				"
-echo "		.    *    .      *  .  .	"
-echo "   *   '*		.    *    .      *  	"
-echo "           *				"
-echo "               *'				"
-echo "    .    *    .      *  .  .            	"
-echo "              '				"
-echo "                   *'  .   *    ..	"
-echo "        .   *    .	      		"
-echo "						"   
-echo "						"     
 echo "all done! - see report.txt for more info -" 
-echo "						"   
-echo "						"   
