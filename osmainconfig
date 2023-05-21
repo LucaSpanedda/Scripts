@@ -70,6 +70,8 @@ sudo snap install zotero-snap
 
 # lilypond
 sudo apt-get install lilypond -y
+# potrace
+sudo apt install potrace -y
 
 # frescobaldi
 
