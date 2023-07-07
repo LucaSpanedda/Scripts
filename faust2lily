@@ -1,0 +1,20 @@
+#!/bin/bash
+# Insert faust file without extension
+
+echo "Generating Faust Diagram (svg files)";
+faust -svg $1.dsp
+
+echo "The selected folder is: $1-svg";
+cd $1-svg
+pwd
+echo "starting the diagram conversion for lilypond: (eps files) "
+
+for i in *.svg; 
+	do inkscape -o $i.eps $i; 
+done
+
+echo "restoring original file names from new files (eps files)"
+for i in *.eps; do
+        var2=$( echo "$i" | awk -F".svg" '{print $1}');
+        mv -v $i "$var2".eps;
+done
