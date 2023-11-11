@@ -35,14 +35,14 @@ sudo apt install ./google-chrome-stable_current_amd64.deb
 sudo snap install zoom-client 
 
 # Python 3 and libraries
-sudo apt-get install python3 -y
-sudo apt install python3-pip -y
-pip install numpy
-pip install scipy
-pip install -U matplotlib
-sudo apt-get install python3-matplotlib -y
-pip install tornado
-pip install bokeh
+sudo apt-get install python3 
+sudo apt install python3-pip 
+pip3 install scipy
+pip3 install numpy
+pip3 install matplotlib
+pip3 install tornado
+pip3 install bokeh
+pip3 install plotext
 
 # GAMuT command line py Concatenative Granulator
 # dependencies
