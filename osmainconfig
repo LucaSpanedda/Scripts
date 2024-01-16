@@ -27,11 +27,33 @@ curl -fsSL https://download.opensuse.org/repositories/home:manuelschneid3r/Debia
 sudo apt update
 sudo apt install albert-master
 
-#i3
-sudo apt-get install i3 
+# npm
+sudo apt-get install npm -y
 
 # snap store
-sudo snap install snap-store 
+sudo apt-get install snap
+sudo snap install snap-store
+
+# install faust-IDE
+git clone https://github.com/grame-cncm/faustide.git --depth 1
+cd faustide
+git config --global core.autocrlf false
+npm install
+npm update
+npm run build
+
+# install nativefier
+sudo npm install -g nativefier
+
+# download faust-IDE
+nativefier --portable https://faustide.grame.fr/
+
+# gcc compiler
+sudo apt update
+sudo apt install build-essential -y
+
+#i3
+sudo apt-get install i3  
 
 # chrome - and install wget
 sudo apt install wget
