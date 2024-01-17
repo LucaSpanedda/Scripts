@@ -60,6 +60,15 @@ sudo apt install wget
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb
 
+# pulseaudio jack
+sudo apt-get install pulseaudio-module-jack
+sudo apt-get install jackd -y
+
+# JUCE
+git clone https://github.com/LucaSpanedda/JUCE.git
+cd JUCE/extras/Projucer/Builds/LinuxMakefile
+make
+
 # zoom
 sudo snap install zoom-client 
 
@@ -174,9 +183,5 @@ make
 ln -sf `pwd`/libSwell.so ~/reaper/reaper_linux_x86_64/REAPER/libSwell.so
 cd ~/reaper/reaper_linux_x86_64
 sudo bash install-reaper.sh
-
-# pulseaudio jack
-sudo apt-get install pulseaudio-module-jack
-sudo apt-get install jackd -y
 
 echo "all done! - see report.txt for more info -" 
