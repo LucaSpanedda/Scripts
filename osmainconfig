@@ -34,6 +34,14 @@ sudo apt-get install npm -y
 sudo apt-get install snap
 sudo snap install snap-store
 
+# faust 
+git clone https://github.com/LucaSpanedda/faust.git
+cd faust
+git checkout master-dev
+git pull --recurse-submodules
+make
+sudo make install
+
 # install faust-IDE
 git clone https://github.com/grame-cncm/faustide.git --depth 1
 cd faustide
