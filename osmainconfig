@@ -104,9 +104,6 @@ sudo add-apt-repository ppa:pure-data/pure-data -y
 sudo apt update
 sudo apt install puredata -y
 
-# faust
-sudo apt-get install faust
-
 # LaTex
 sudo apt-get install texlive-full -y
 # texmaker
