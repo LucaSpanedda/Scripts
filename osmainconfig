@@ -71,6 +71,8 @@ sudo apt install ./google-chrome-stable_current_amd64.deb
 # pulseaudio jack
 sudo apt-get install pulseaudio-module-jack
 sudo apt-get install jackd -y
+sudo apt-get install qjackctl -y
+sudo dpkg -i jacktrip_1.1-1.deb
 
 # JUCE
 git clone https://github.com/LucaSpanedda/JUCE.git
